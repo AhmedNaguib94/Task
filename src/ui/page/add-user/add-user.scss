@@ -1,0 +1,17 @@
+@import "../../../style/fonts";
+
+.add-user-container {
+  .header {
+    margin-bottom: 30px;
+    img {
+      margin-inline-end: 7px;
+      width: 15px;
+      height: 15px;
+    }
+
+    h3 {
+      @extend .font-H3;
+      margin: 0;
+    }
+  }
+}

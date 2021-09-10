@@ -1,0 +1,43 @@
+@import "../../../style/fonts";
+
+.user-details-container {
+  width: 100%;
+
+  .header {
+    margin-bottom: 30px;
+    img {
+      margin-inline-end: 7px;
+      width: 15px;
+      height: 15px;
+    }
+
+    h3 {
+      @extend .font-H3;
+      margin: 0;
+    }
+  }
+
+  .content {
+    box-shadow: 0 0px 0px rgba(195, 155, 50, 0.4),
+      0 0 4px rgba(195, 155, 50, 0.4);
+    border-radius: 6px;
+    padding: 20px;
+
+    img {
+      width: 128px;
+      height: 128px;
+    }
+
+    h4 {
+      @extend .font-H3;
+      font-weight: 600;
+      color: var(--color-primary);
+    }
+
+    p {
+      @extend .font-H4;
+      font-weight: 600;
+      color: var(--paragraph-color);
+    }
+  }
+}

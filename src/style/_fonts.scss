@@ -1,0 +1,122 @@
+.font-T1 {
+  font-size: 40px;
+  // tablet
+  @media screen and (max-width: 1279px) {
+    font-size: 38px;
+  }
+  // mobile
+  @media screen and (max-width: 600px) {
+    font-size: 24px;
+  }
+}
+
+.font-T2 {
+  font-size: 30px;
+  // tablet
+  @media screen and (max-width: 1279px) {
+    font-size: 28px;
+  }
+  // mobile
+  @media screen and (max-width: 600px) {
+    font-size: 14px;
+  }
+}
+
+.font-T3 {
+  font-size: 26px;
+  // tablet
+  @media screen and (max-width: 1279px) {
+    font-size: 24px;
+  }
+  // mobile
+  @media screen and (max-width: 600px) {
+    font-size: 14px;
+  }
+}
+
+.font-T4 {
+  font-size: 24px;
+  // tablet
+  @media screen and (max-width: 1279px) {
+    font-size: 22px;
+  }
+  // mobile
+  @media screen and (max-width: 600px) {
+    font-size: 14px;
+  }
+}
+
+.font-H1 {
+  font-size: 22px;
+  // tablet
+  @media screen and (max-width: 1279px) {
+    font-size: 20px;
+  }
+  // mobile
+  @media screen and (max-width: 600px) {
+    font-size: 18px;
+  }
+}
+
+.font-H2 {
+  font-size: 20px;
+  // tablet
+  @media screen and (max-width: 1279px) {
+    font-size: 17px;
+  }
+  // mobile
+  @media screen and (max-width: 600px) {
+    font-size: 16px;
+  }
+}
+
+.font-H3 {
+  font-size: 16px;
+  // tablet
+  @media screen and (max-width: 1279px) {
+    font-size: 14px;
+  }
+}
+
+.font-H4 {
+  font-size: 14px;
+  // tablet
+  @media screen and (max-width: 1279px) {
+    font-size: 13px;
+  }
+  // mobile
+  @media screen and (max-width: 600px) {
+    font-size: 12px;
+  }
+}
+
+.font-H5 {
+  font-size: 12px;
+  // tablet
+  @media screen and (max-width: 1279px) {
+    font-size: 12px;
+  }
+  // mobile
+  @media screen and (max-width: 600px) {
+    font-size: 11px;
+  }
+}
+
+.font-H6 {
+  font-size: 11px;
+  // tablet
+  @media screen and (max-width: 1279px) {
+    font-size: 11px;
+  }
+  // mobile
+  @media screen and (max-width: 600px) {
+    font-size: 9px;
+  }
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: break-word;
+}

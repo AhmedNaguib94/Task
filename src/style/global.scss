@@ -1,0 +1,65 @@
+@import "./colors";
+@import "./fonts";
+
+.button {
+  background-color: var(--color-primary);
+  color: var(--color-surface-light);
+  border: 0;
+  outline: 0;
+  padding: 0;
+  border-radius: 5px;
+  padding: 7px 10px;
+  height: fit-content;
+
+  a {
+    color: var(--color-surface-light);
+    text-decoration: none;
+  }
+
+  &:focus {
+    background-color: var(--color-primary);
+  }
+
+  &:hover {
+    background-color: var(--color-primary);
+  }
+}
+
+.ant-input {
+  max-width: 100%;
+  width: 450px;
+  border: 1px solid var(--color-border);
+  border-radius: 5px;
+  padding: 7px;
+
+  &:focus {
+    border: 1px solid var(--color-border);
+  }
+
+  &:hover {
+    border: 1px solid var(--color-border);
+  }
+}
+
+.ant-form-item-label > label {
+  @extend .font-H4;
+  color: #999999;
+}
+
+.ant-form-item-label
+  > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+  display: none;
+}
+
+.ant-pagination {
+  text-align: right;
+  margin-top: 30px;
+}
+
+.ant-pagination-item-active {
+  border-color: var(--color-primary);
+}
+
+.ant-pagination-item-active a {
+  color: var(--color-primary);
+}

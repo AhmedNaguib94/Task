@@ -1,0 +1,17 @@
+@import "../../../style/fonts";
+
+.container {
+  width: 100%;
+
+  .users-container {
+    width: 100%;
+    .header {
+      margin-bottom: 20px;
+
+      h3 {
+        @extend .font-H2;
+        color: var(--title-color);
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import "~antd/dist/antd.css";
+@import "./style/global";
+@import "./style/classes";
+
+.app-container {
+  background-color: var(--background-color);
+  min-height: 100vh;
+  padding: 5%;
+  box-sizing: border-box;
+}
