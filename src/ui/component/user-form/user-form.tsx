@@ -21,7 +21,7 @@ const UserForm: React.FC = () => {
         user.lastName = values.lastName;
         user.email = values.email;
         try {
-            const response = await addUserApi(user);
+            await addUserApi(user);
             toast.success('user has been added successfully', {position: toast.POSITION.BOTTOM_CENTER});
             history.push('/users');
         } catch (error) {

@@ -41,7 +41,7 @@ describe('user details component', () => {
 
     test('render items', async () => {
         renderWithRedux(<Router><UserDetails /></Router>);
-        expect(await screen.findAllByRole('item')).toHaveLength(1);
+        expect(await screen.findAllByRole('article')).toHaveLength(1);
     })
 })
 

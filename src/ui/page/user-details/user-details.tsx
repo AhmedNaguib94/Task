@@ -24,7 +24,7 @@ const UserDetails: React.FC = () => {
     const getUser = async () => {
         dispatch({type: LOADING});
         const response = await getUserById(id);
-        setUser(userMapper.fromJson(response.data));
+        setUser(userMapper.mapFromJson(response.data));
         dispatch({type: LOADING});
     }
 
@@ -36,26 +36,26 @@ const UserDetails: React.FC = () => {
                     <h3>User Details</h3>
                 </div>
                 <div className="content flex justify-space-between align-center wrap">
-                    <div className="item flex" role="item">
+                    <div className="item flex" role="article">
                     {
                         user?.picture ? 
                         <img src={user.picture} alt={user.userName} /> :
                         <img src={process.env.PUBLIC_URL + '/assets/images/user.png'} alt={user?.userName} />
                     }
                     </div>
-                    {user?.userName && <div className="item flex column" role="item">
+                    {user?.userName && <div className="item flex column" role="article">
                         <h4>Name</h4>
                         <p>{user?.userName}</p>
                     </div> }
-                    {user?.title && <div className="item flex column" role="item">
+                    {user?.title && <div className="item flex column" role="article">
                         <h4>Title</h4>
                         <p>{user?.title}</p>
                     </div> }
-                    {user?.gender && <div className="item flex column" role="item">
+                    {user?.gender && <div className="item flex column" role="article">
                         <h4>Gender</h4>
                         <p>{user?.gender}</p>
                     </div> }
-                    {user?.email && <div className="item flex column" role="item">
+                    {user?.email && <div className="item flex column" role="article">
                         <h4>Email</h4>
                         <p>{user?.email}</p>
                     </div> }

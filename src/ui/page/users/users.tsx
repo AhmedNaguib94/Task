@@ -26,7 +26,7 @@ const Users: React.FC = () => {
         dispatch({type: LOADING});
         const response = await getAllUsersApi(pageIndex, pageSize);
         setTotalUsers(response.data.total);
-        setUsersArray(userMapper.fromList(response.data.data));
+        setUsersArray(userMapper.mapFromList(response.data.data));
         dispatch({type: LOADING});
     } 
 

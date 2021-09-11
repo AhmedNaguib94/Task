@@ -1,4 +1,4 @@
 export default interface MapperInterface<T> {
-    fromJson(json: any): T;
-    fromList(json: any): T[];
+    mapFromJson(json: any): T;
+    mapFromList(json: any): T[];
 }
