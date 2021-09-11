@@ -4,11 +4,16 @@
   box-shadow: 0 0px 0px rgba(195, 155, 50, 0.4), 0 0 4px rgba(195, 155, 50, 0.4);
   border-radius: 6px;
   height: fit-content;
-  min-width: 300px;
-  max-width: 300px;
+  max-width: 100%;
+  width: 20%;
   margin-inline-end: 30px;
   margin-bottom: 30px;
   flex-grow: 1;
+  min-width: 250px;
+
+  @media (max-width: 500px) {
+    margin-inline-end: 0;
+  }
 
   .right {
     padding: 15px;

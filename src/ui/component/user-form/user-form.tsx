@@ -7,6 +7,7 @@ import { addUserApi } from '../../../core/api/user-api';
 
 import 'react-toastify/dist/ReactToastify.css';
 import User from '../../../core/models/user';
+import { FormEvent } from "react";
 
 toast.configure();
 const UserForm: React.FC = () => {
@@ -29,11 +30,17 @@ const UserForm: React.FC = () => {
         dispatch({type: LOADING});
     };
 
+    const test = (event: React.FormEvent) => {
+        console.log(event.target);
+        
+    }
+
 
     return (
-        <div className="user-form-container flex">
+        <div className="user-form-container flex full-width">
             <Form
                 name="basic"
+                role="form"
                 onFinish={onFinish}
                 autoComplete="off"
                 layout="vertical"
@@ -43,7 +50,7 @@ const UserForm: React.FC = () => {
                     name="firstName"
                     rules={[{ required: true, message: 'Please input your first name!' }]}
                 >
-                    <Input placeholder="Type First Name" />
+                    <Input placeholder="Type First Name" role="first-name" onKeyUp={(event) => test(event)} />
                 </Form.Item>
 
                 <Form.Item
@@ -51,7 +58,7 @@ const UserForm: React.FC = () => {
                     name="lastName"
                     rules={[{ required: true, message: 'Please input your last name!' }]}
                 >
-                    <Input placeholder="Type Last Name" />
+                    <Input placeholder="Type Last Name" role="last-name" onChange={(event) => test(event)} />
                 </Form.Item>
 
                 <Form.Item
@@ -59,11 +66,11 @@ const UserForm: React.FC = () => {
                     name="email"
                     rules={[{ required: true, type: 'email', message: 'Please input your email!' }]}
                 >
-                    <Input placeholder="Type Email" />
+                    <Input placeholder="Type Email" role="email" />
                 </Form.Item>
 
                 <Form.Item>
-                    <Button type="primary" htmlType="submit" className="button" style={{marginTop: '20px'}}>
+                    <Button type="primary" htmlType="submit" role="button" className="button" style={{marginTop: '20px'}}>
                         Submit
                     </Button>
                 </Form.Item>

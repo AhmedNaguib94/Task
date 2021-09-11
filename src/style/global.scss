@@ -41,6 +41,10 @@
   }
 }
 
+.ant-form {
+  width: 100%;
+}
+
 .ant-form-item-label > label {
   @extend .font-H4;
   color: #999999;
@@ -62,4 +66,14 @@
 
 .ant-pagination-item-active a {
   color: var(--color-primary);
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(--color-surface-light);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
 }
